@@ -603,6 +603,7 @@ input[type=checkbox]{
 .reg{
     text-align: center;
     padding-left: 70px;
+    margin-top: 60px;
 }
 @media (max-width: 700px) {
     .reg-form{
