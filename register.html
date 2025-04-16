@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YAE Register Form</title>
+  <script src="myjava.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="images/1736949590211.png">
 </head>
@@ -38,16 +39,6 @@
     <label for="C&R">City/Region</label>
     <input type="text" id="C&R" name="C&R" placeholder="City/Region" required>
     <br>
-   
-    <label for="status">Current Status</label><br>
-    <select id="status" name="status" required>
-      <option value="student"> Student</option>
-      <option value="graduate"> Graduate</option>
-      <option value="job seeker"> Job Seeker</option>
-      <option value="employed"> Employed</option>
-      <option value="Entrepreneur">Entrepreneur</option>
-    </select>
-    <br>
     <label for="status">Highest Level of Education</label><br>
     <select id="status" name="status" required>
       <option value="High School">High School</option>
@@ -66,7 +57,7 @@
       <option value="pastries">Pastries</option>
       <option value="makeup">Make Up</option>
       <option value="coding"> Coding</option>
-      <option value="interior">Interior DEsign</option>
+      <option value="interior">Interior Design</option>
     </select>
     <br>
     <label for="time-slot">Available Time Slot</label><br>
@@ -104,7 +95,7 @@
     <input type="checkbox" id="consent" value="consent" name="consent" required>
     <label for="consent"> I consent to receive updates and communications from the Youth Empowerment Program.</label>
     <br>
-    <input type="submit" value="Register Now" class="sub2" onclick="window.location.href='index.html'">
+    <input type="submit" value="Register Now" class="sub2" onclick="myFunction()">
   </form>
   <h6 class="reg-copy">&copy; Copyright 2025 YAE. All rights reserved.</p>
 </body>
