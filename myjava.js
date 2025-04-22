@@ -1,3 +1,3 @@
 function myFunction(){
-    alert("Registered");
+    alert("Congratulation\nYou have been Registered");
 }

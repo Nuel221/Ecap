@@ -115,6 +115,10 @@ section{
     margin: 20px;
     color: navy;
 }
+.img-hero{
+    width: 100%;
+    height: 450px;
+}
 @media (max-width: 700px) {
     .slide-title{
         margin-top: 50px;
@@ -123,6 +127,10 @@ section{
     .intro-desc{
         text-align: justify;
         text-align-last: center;
+    }
+    .container.hi{
+        margin-top: 40px;
+        padding: 10px 50px 30px 50px;
     }
     .row.a {
         --bs-gutter-x: 1.5rem;
@@ -138,6 +146,10 @@ section{
     .col.he {
         margin-top: 10px;
         margin-left: 0px;
+    }
+    .img-hero{
+        width: 100%;
+        height: 350px;
     }
     .row.imp,.row.f{
             --bs-gutter-x: 1.5rem;
@@ -257,6 +269,10 @@ footer{
     color: navy;
     max-width: 100%;
     background-color: #fff;
+}
+.col.f{
+    padding-top: 50px;
+    padding-left: 30px;
 }
 .be{
     padding-top: 30px;
@@ -605,10 +621,17 @@ input[type=checkbox]{
     padding-left: 70px;
     margin-top: 60px;
 }
+.sub3,.sub4{
+    width: 20%;
+    border-radius: 10px;
+    background-color: navy;
+    color: white;
+    border-style: none;
+}
 @media (max-width: 700px) {
     .reg-form{
-        width: 70%;
-        margin: 50px 25px 30px 35px;
+        width: 80%;
+        margin: 50px 25px 30px 25px;
         border-radius: 5px;
         padding: 30px;
         padding-right: 40px;
@@ -618,4 +641,42 @@ input[type=checkbox]{
         text-align: center;
         padding-left: 0px;
     }
+    .sub3{
+        width: 40%;
+    }
+}
+/**-- done with register style --**/
+.thanks{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 70px;
+    border-radius: 20px;
+    padding: 50px 50px 30px 50px;
+    box-shadow:  0 2px 5px rgba(18, 74, 205, 0.3);
+}
+.thanks>p{
+    color: black;
+}
+.thanks>h3{
+    padding-top: 30px;
+}
+.thanks>h1{
+    text-align: center;
+}
+.bold{
+   padding-top: 30px;
+}
+p>b{
+    color: navy;
+}
+.t-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.sub4{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }

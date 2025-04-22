@@ -4,45 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YAE</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="images/1736949590211.png">
   <link rel="stylesheet" href="style.css">
+  <script src="myjava.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/1736949590211.png" width="120px" height="90px" class="img-logo"> </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarID">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-                        <a class="nav-link active" aria-current="page" href="service.html">Our Skills</a>
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
-                    </div>
-                    <form class="d-flex" role="register">
-                        <a><button  class="btn btn-outline-dark" type="button" onclick="window.location.href='register.html'">Register</button></a>
-                    </form>
-                </div>
-            </div>
-        </nav>
+  <input type="submit" value="Back To Homepage" class="sub3" onclick="window.location.href='index.html'">
   <div class="reg">
     <h1>Ready to Build Your Future?</h1>
     <h2>Register Now and Start Your Empowerment Journey</h2>
   </div>
   <form class="reg-form">
     <label for="fname">Full Name</label>
-    <input type="text" placeholder="Full Name" id="fname" name="fname"required>
+    <input type="text" placeholder="Full Name" id="fname" name="fname" required>
     <br>
     <label for="dob">Date of Birth</label>
-    <input type="date" id="dob" name="dob" required>
+    <input type="date" id="dob" name="dob"  required>
     <br>
    
     <label for="gender">Gender</label><br>
@@ -55,13 +33,13 @@
     <input type="email" id="email" name="email" placeholder="Email" required>
     <br>
     <label for="pnumber">Phone Number</label>
-    <input type="number" id="pnumber" name="pnumber" placeholder="Phone Number" required>
+    <input type="tel" id="pnumber" name="pnumber" placeholder="Phone Number" required>
     <br>
     <label for="address">Address</label>
     <input type="text" id="address" name="address" placeholder="Address" required>
     <br>
-    <label for="C&R">City/Region</label>
-    <input type="text" id="C&R" name="C&R" placeholder="City/Region" required>
+    <label for="city">City/Region</label>
+    <input type="text" id="city" name="city" placeholder="City/Region" required>
     <br>
     <label for="status">Highest Level of Education</label><br>
     <select id="status" name="status" required>
@@ -84,8 +62,8 @@
       <option value="interior">Interior Design</option>
     </select>
     <br>
-    <label for="time-slot">Available Time Slot</label><br>
-    <select id="time-slot" name="time-slot" required>
+    <label for="slot">Available Time Slot</label><br>
+    <select id="slot" name="slot" required>
       <option value="morning">Morning</option>
       <option value="afternoon">Afternoon</option>
     </select>
@@ -93,7 +71,7 @@
     <label for="hope">What do you hope to gain</label><br>
     <textarea rows="10" cols="30" name="placeholder" >Message</textarea>
     <br>
-    <h3>Emmergency Contact</h3>
+    <h3>Emergency Contact</h3>
     <label for="fname">Full Name</label>
     <input type="text" placeholder="Full Name" id="fname" name="fname" required>
     <br>
@@ -101,10 +79,10 @@
     <input type="text" placeholder="Relationship" id="rlsp" name="rlsp" required>
     <br>
     <label for="pnumber">Phone Number</label>
-    <input type="number" id="pnumber" name="pnumber" placeholder="Phone Number" required>
+    <input type="tel" id="pnumber" name="pnumber" placeholder="Phone Number" required>
     <br>
-    <label for="get-info">How Did You Hear About Us</label><br>
-    <select id="get-info" name="get-info" required>
+    <label for="info">How Did You Hear About Us</label><br>
+    <select id="info" name="info" required>
       <option value="social"> Social Media</option>
       <option value="family">Family</option>
       <option value="friend">Friend</option>
@@ -117,9 +95,9 @@
     <label for="terms">I agree to the Terms & Conditions and Privacy Policy.</label>
     <br>
     <input type="checkbox" id="consent" value="consent" name="consent" required>
-    <label for="consent"> I consent to receive updates and communications from the Youth Empowerment Program.</label>
+    <label for="consent">I consent to receive updates and communications from the YAE Program.</label>
     <br>
-    <input type="submit" value="Register Now" class="sub2" onclick="myFunction()">
+    <input type="submit" value="Register Now" class="sub2" required>
   </form>
   <h6 class="reg-copy">&copy; Copyright 2025 YAE. All rights reserved.</p>
 </body>
