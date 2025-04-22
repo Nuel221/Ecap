@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="images/1736949590211.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <script src="myjava.js"></script>
 </head>
 <body>
         <nav class="navbar navbar-expand-sm navbar-light">
@@ -76,14 +76,14 @@
                     </div>
                 </div>
                 <div class="col form">
-                    <form>
-                        <input value="Your Name" type="text" name="placeholder" id="Your-Name1" requiredg>
+                    <form id="myForm" onsubmit="return validateForm()">
+                        <input type="text" name="name" id="Your-Name1" placeholder="Your Name" required>
                         <br>
-                        <input value="Email" type="email" name="placeholder" id="email1" required>
+                        <input type="email" name="email" id="email1" placeholder="Email" required>
                         <br>
-                        <textarea rows="10" cols="30" name="placeholder" id="message">Message</textarea>
+                        <textarea rows="10" cols="30" name="message" id="message" placeholder="Message" required></textarea>
                         <br>
-                        <input type="submit" value="Send" class="sub" onclick="window.location.href='thanks.html'">
+                        <input type="submit" value="Send" class="sub">
                     </form>
                 </div>
             </div>

@@ -598,7 +598,7 @@ hr{
     }
 }
 /**-- done with service style --**/
-.reg-form{
+.regForm{
     width: 50%;
     margin: 50px 0px 30px 25%;
     border-radius: 5px;
@@ -629,7 +629,7 @@ input[type=checkbox]{
     border-style: none;
 }
 @media (max-width: 700px) {
-    .reg-form{
+    .regForm{
         width: 80%;
         margin: 50px 25px 30px 25px;
         border-radius: 5px;
@@ -680,3 +680,27 @@ p>b{
     padding-left: 20px;
     padding-right: 20px;
 }
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+  }
+  
+  #toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+  }
+  
