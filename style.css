@@ -654,6 +654,16 @@ input[type=checkbox]{
     padding: 50px 50px 30px 50px;
     box-shadow:  0 2px 5px rgba(18, 74, 205, 0.3);
 }
+@media (max-width: 700px) {
+    .thanks{
+        width: 80%;
+        margin-left: 0%;
+        margin-top: 70px;
+        border-radius: 20px;
+        padding: 50px 50px 30px 50px;
+        box-shadow:  0 2px 5px rgba(18, 74, 205, 0.3);
+    }
+}
 .thanks>p{
     color: black;
 }
