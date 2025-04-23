@@ -120,6 +120,14 @@ section{
     height: 450px;
 }
 @media (max-width: 700px) {
+    .d-flex{
+        display: flex !important;
+        padding-left: 10%;
+        color: white;
+    }
+    .row.gx-5{
+        margin-left: 15%;
+    }
     .slide-title{
         margin-top: 50px;
         font-size: 60px;
@@ -663,6 +671,7 @@ input[type=checkbox]{
         padding: 50px 50px 30px 50px;
         box-shadow:  0 2px 5px rgba(18, 74, 205, 0.3);
     }
+
 }
 .thanks>p{
     color: black;
